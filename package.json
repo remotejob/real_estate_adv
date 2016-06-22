@@ -4,7 +4,8 @@
   "description": "real_estate_adv",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/webpack-dev-server --history-api-fallback --progress --port 3000"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,24 @@
   "bugs": {
     "url": "https://github.com/remotejob/real_estate_adv/issues"
   },
-  "homepage": "https://github.com/remotejob/real_estate_adv#readme"
+  "homepage": "https://github.com/remotejob/real_estate_adv#readme",
+  "dependencies": {
+   
+    "react": "^15.0.0-rc.1",
+    "react-dom": "^15.0.0-rc.1",
+    "react-redux": "^4.4.0",
+    "redux": "^3.3.1"
+    
+  },
+  "devDependencies": {
+    "babel-core": "^6.7.2",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-class-properties": "^6.6.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-es2015-native-modules": "^6.6.0",
+    "file-loader": "^0.8.5",
+    "webpack": "^2.1.0-beta.4",
+    "webpack-dev-server": "^2.1.0-beta.0"
+  }
+  
 }
