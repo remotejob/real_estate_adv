@@ -23,7 +23,14 @@ module.exports = {
         query: {
           name: '[name].[ext]'
         }
-      }, 
+      },
+      {
+          test: /\.css$/,
+          loaders: [
+            'style',
+            'css'
+          ]
+        },
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,

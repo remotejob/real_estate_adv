@@ -1,13 +1,11 @@
-
-//import { Provider } from 'react-redux';
-//import ReactDOM from 'react-dom';
-import React from 'react'
-import { render } from 'react-dom'
-
-import App from 'containers/App';
-//import store from 'store';
+import { render } from 'react-dom';
+import React from 'react';
+import { Router, browserHistory } from 'react-router/es6';
+import rootRoute from 'pages/routes';
 import 'index.html';
+//import 'general.scss';
 
 render(
-		<App />,document.getElementById('root')
+  <Router history={browserHistory} routes={rootRoute} />,
+  document.getElementById('root')
 );
