@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-//import './header.scss';
+import './header.scss';
 
 const { string } = PropTypes;
 

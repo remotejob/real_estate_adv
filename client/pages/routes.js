@@ -13,15 +13,32 @@ export default {
   childRoutes: [
     {
       path: '/',
-      getComponent(location, cb) {
+      getComponent(nextState, cb) {
         System.import('pages/Home')
           .then(loadRoute(cb))
           .catch(errorLoading);
       }
     },
+//    require('pages/Rent'),
+    {
+        path: 'rent',
+        getComponent(partialNextState, cb) {
+          System.import('pages/Rent')
+            .then(loadRoute(cb))
+            .catch(errorLoading);
+        }
+      },      
+      {
+          path: 'rent/details',
+          getComponent(partialNextState, cb) {
+            System.import('pages/Rent/components/Rent')
+              .then(loadRoute(cb))
+              .catch(errorLoading);
+          }
+        },     
     {
       path: 'blog',
-      getComponent(location, cb) {
+      getComponent(nextState, cb) {
         System.import('pages/Blog')
           .then(loadRoute(cb))
           .catch(errorLoading);
@@ -29,7 +46,7 @@ export default {
     },
     {
       path: 'about',
-      getComponent(location, cb) {
+      getComponent(nextState, cb) {
         System.import('pages/About')
           .then(loadRoute(cb))
           .catch(errorLoading);

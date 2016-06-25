@@ -1,6 +1,6 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 import Toolbar from 'components/Toolbar';
-//import './style.scss';
+import './style.scss';
 
 const App = (props) => (
   <main className="viewport">
@@ -9,8 +9,8 @@ const App = (props) => (
   </main>
 );
 
-App.propTypes = {
-  children: PropTypes.node
-};
+//App.propTypes = {
+//  children: PropTypes.node
+//};
 
 export default App;
