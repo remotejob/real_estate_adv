@@ -23,7 +23,7 @@ export default {
     {
         path: 'rent',
         getComponent(partialNextState, cb) {
-          System.import('pages/Rent')
+          System.import('routes/Rent')
             .then(loadRoute(cb))
             .catch(errorLoading);
         }
@@ -31,7 +31,7 @@ export default {
       {
           path: 'rent/details',
           getComponent(partialNextState, cb) {
-            System.import('pages/Rent/components/Rent')
+            System.import('routes/Rent/components/Rent')
               .then(loadRoute(cb))
               .catch(errorLoading);
           }

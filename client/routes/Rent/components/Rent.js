@@ -93,4 +93,5 @@ class Rent extends React.Component {
 
 }
 
-module.exports = Rent
+//module.exports = Rent
+export default Rent;
