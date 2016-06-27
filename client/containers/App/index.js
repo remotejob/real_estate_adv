@@ -1,16 +1,19 @@
-import React from 'react';
-import Toolbar from 'components/Toolbar';
+import React ,{ PropTypes } from 'react';
+//import Toolbar from 'components/Toolbar';
+import GlobalNav from 'components/GlobalNav';
 import './style.scss';
+
+//const { node} = PropTypes;
 
 const App = (props) => (
   <main className="viewport">
-    <Toolbar />
+    <GlobalNav />
     {props.children}
   </main>
 );
 
-//App.propTypes = {
-//  children: PropTypes.node
-//};
+App.propTypes = {
+  children: PropTypes.node
+};
 
 export default App;

@@ -96,6 +96,6 @@ module.exports = {
 
 	devServer : {
 		contentBase : './client'
-	// hot: true
+//	 hot: true
 	}
 };

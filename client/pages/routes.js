@@ -29,13 +29,21 @@ export default {
         }
       },      
       {
-          path: 'rent/details',
+          path: 'rent/details/:id',
           getComponent(partialNextState, cb) {
-            System.import('routes/Rent/components/Rent')
+            System.import('routes/Rent/Details')
               .then(loadRoute(cb))
               .catch(errorLoading);
           }
-        },     
+        }, 
+        {
+            path: 'rent/details/:id/modal',
+            getComponent(partialNextState, cb) {
+              System.import('routes/Rent/Details/ModalShowAllImg')
+                .then(loadRoute(cb))
+                .catch(errorLoading);
+            }
+          },  
     {
       path: 'blog',
       getComponent(nextState, cb) {

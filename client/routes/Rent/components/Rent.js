@@ -11,22 +11,22 @@ class Rent extends React.Component {
 //	    	allimages: true,
 //	    	selected: 0	    	
 //	    }
-	    this. toggledisplay=this.toggledisplay.bind(this)	
+//	    this. toggledisplay=this.toggledisplay.bind(this)	
 	  }
 
-	toggledisplay(){
-		
-		if (this.props.params.id){
-			
-			ReactDOM.findDOMNode(this.refs.startimages).style.display ='none'
-			
-		} else {
-			ReactDOM.findDOMNode(this.refs.startimages).style.display =''
-		
-		}
-		
-	
-	}
+//	toggledisplay(){
+//		
+//		if (this.props.params.id){
+//			
+//			ReactDOM.findDOMNode(this.refs.startimages).style.display ='none'
+//			
+//		} else {
+//			ReactDOM.findDOMNode(this.refs.startimages).style.display =''
+//		
+//		}
+//		
+//	
+//	}
 	
 	componentWillMount(){
 	
@@ -35,7 +35,7 @@ class Rent extends React.Component {
 	componentDidMount(){		
 		console.log("mount Rent")
 		
-		this.toggledisplay()
+//		this.toggledisplay()
 //		ReactDOM.findDOMNode(this.refs.startimages).style.display = '';
 		
 //		ReactDOM.findDOMNode(this.refs.startimages).style.display ='default';
@@ -58,7 +58,7 @@ class Rent extends React.Component {
 	
 	componentDidUpdate(prevProps) {
 		
-		this.toggledisplay()
+//		this.toggledisplay()
 
 					
  }
